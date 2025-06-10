@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;400&display=swap');
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-family: "Lexend", sans-serif;
+}
+
+a.link-off {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+/* Nav */
+#desktop-nav, #hamburger-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+}
+
+#hamburger-nav {
+    display: none;
+}
+
+#desktop-nav .logo, #hamburger-nav .logo {
+    font-size: 1.7rem;
+}
+
+#desktop-nav .nav-list-container .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+#desktop-nav .nav-list-container .nav-list .nav-items a:hover {
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+#hamburger-nav .hamburger-btn-container {
+    border-radius: 50%;
+    padding: 8px 10px;
+    box-shadow: 0px 0px 15px 3px rgb(207, 204, 204);
+}
+
+#hamburger-nav .hamburger-btn-container .hamburger-btn img.close-icon {
+    content: url(./assets/icons/close-icon.svg);
+}
+
+#hamburger-nav .hamburger-btn-container .nav-list-container {
+    border-top: 2px solid black;
+    display: none;
+    position: absolute;
+    top: 17vh;
+    left: 0;
+    background-color: white;
+    width: 100vw;
+    height: 83vh;
+}
+
+#hamburger-nav .hamburger-btn-container .nav-list-container.block {
+    display: block;
+}
+
+#hamburger-nav .hamburger-btn-container .nav-list-container .nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+/* HERO SECTION */
+
+#hero-section {
+    height: 100vh;
+    display: flex;
+    padding-top: 17vh;
+}
+
+#hero-section .left-section {
+    flex: 2;
+}
+
+#hero-section .left-section .profile-image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-section .left-section .profile-image-container img {
+    max-width: 90%;
+    max-height: 95%;
+    border-radius: 6%;
+}
+
+
+#hero-section .right-section {
+    height: 95%;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero-section .right-section .intro-greet-container {
+    font-size: 4.75rem;
+}
+
+section#about, section#skills, section#projects, section#contact-me {
+    padding-top: 16vh;
+}
+
+/* ABOUT SECTION */
+
+section#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#about .contents {
+    max-width: 800px;
+    padding: 0 2rem;
+    
+}
+
+section#about .contents h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+section#about .contents p {
+    margin: 1.5rem 0;
+}
+
+/* SKILLS SECTION */
+
+section#skills h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+section#skills .skills-container {
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 60px;
+}
+
+section#skills .skills-container .skill-card {
+    background-color: #f9f9f9;
+    width: 110px;
+    height: 110px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+section#skills .skills-container .skill-card .skill-image-container {
+    width: 55px;
+    height: 55px;
+    background-color: #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+section#skills .skills-container .skill-card .skill-image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+section#skills .skills-container .skill-card .skill-title {
+    text-align: center;
+}
+
+/* PROJECTS SECTION */
+
+section#projects > h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+section#projects .projects-list-container {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5rem;
+}
+
+
+section#projects .projects-list-container .project-container {
+    max-width: 600px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    padding-top: 2rem;
+    background-color:#fcfafae0;
+}
+
+section#projects .projects-list-container .project-container .project-image-container {
+    flex: 1;
+}
+
+section#projects .projects-list-container .project-container .project-image-container img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+section#projects .projects-list-container .project-container .project-about-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+}
+
+section#projects .projects-list-container .project-container .project-about-container .title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+section#projects .projects-list-container .project-container .project-about-container .description {
+    text-align: center;
+    font-size: 0.98rem;
+}
+
+section#projects .projects-list-container .project-container .project-about-container .tool-used {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+}
+
+section#projects .projects-list-container .project-container .project-about-container .tool-used .tool {
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* Contact me section */
+section#contact-me {
+    padding-bottom: 5vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+section#contact-me h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section#contact-me p {
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+section#contact-me form {
+    max-width: 500px;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section#contact-me form input {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+}
+
+section#contact-me form textarea.message {
+    height: 150px;
+    resize: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+}
+
+section#contact-me form .contact-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+section#contact-me form .contact-btn {
+    background-color: black;
+    color: white;
+    border-radius: 0.6rem;
+    padding: 0.5rem 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 9rem;
+}
+
+section#contact-me form .contact-btn img {
+    height: 65%;
+    width: 20%;
+}
+
+/* FOOTER */
+footer {
+    padding: 0 2rem;
+}
+
+footer div {
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: 200;
+}
+
+footer .footer-nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-nav-container .nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 1rem;
+}
+
+footer .contact-medias-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer .contact-medias-container .media-logo-container {
+    width: 35px;
+    display: flex;
+    align-items: center;
+}
+
+footer .contact-medias-container .media-logo-container img {
+    max-width: 100%;
+}

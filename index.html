@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaQueries.css" />
+  
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Rohinth H</div>
+        <div class="nav-list-container">
+            <ul class="nav-list">
+                <li class="nav-items"> <a class="link-off" href="#">Home</a> </li>
+                <li class="nav-items"> <a class="link-off" href="#about">About</a> </li>
+                <li class="nav-items"> <a class="link-off" href="#skills">Skills</a> </li>
+                <li class="nav-items"> <a class="link-off" href="#projects">Projects</a> </li>
+                <li class="nav-items"> <a class="link-off" href="#contact-me">Contact</a> </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Rohinth H</div>
+        <div class="hamburger-btn-container">
+            <button class="hamburger-btn" onclick="toggleNavList(event)">
+                <img src="./assets/icons/hamburger-icon.svg" />
+            </button>
+
+            <div id="hamburger-list" class="nav-list-container">
+                <ul class="nav-list">
+                    <li class="nav-items"> <a onclick="disappearNavList(event)" class="link-off" href="#">Home</a> </li>
+                    <li class="nav-items"> <a onclick="disappearNavList(event)" class="link-off" href="#about">About</a> </li>
+                    <li class="nav-items"> <a onclick="disappearNavList(event)" class="link-off" href="#skills">Skills</a> </li>
+                    <li class="nav-items"> <a onclick="disappearNavList(event)" class="link-off" href="#projects">Projects</a> </li>
+                    <li class="nav-items"> <a onclick="disappearNavList(event)" class="link-off" href="#contact-me">Contact</a> </li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+    
+    <section id="hero-section">
+        <div class="left-section">
+            <div class="profile-image-container">
+                <img class="profile-image" src="./assets/images/profile1.JPG" />
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="intro-greet-container">
+                <h1>Welcome!</h1>
+                <h1>I am Rohinth</h1>
+            </div>
+            <div class="intro-about-container">
+                <p>SLEEP... CODE... EAT... REPEAT...</p>
+            </div>
+            <div class="intro-contact-container">
+                <a href="#contact-me">Contact Me</a>
+                <div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="contents">
+            <h1>ABOUT ME</h1>
+            <p>🌟 Hey there! I’m Rohinth H, a tech enthusiast and Computer Science student at D.G. Vaishnav College, Arumbakkam. I’m passionate about turning ideas into reality through code and creativity.</p>
+            <p>💻 Currently, I’m working on full-stack development and Java application development. I’m a multilingual developer fluent in JavaScript, Python, and Java, and I’ve built several projects using these and other programming languages.</p>
+            <p>🤝 I thrive in collaborative environments like hackathons, conferences, and tech meetups, where I connect with like-minded individuals and grow through shared learning.</p>
+            <p>📢 I’m also passionate about spreading motivation and tech awareness among people, especially those just stepping into the world of technology.</p>
+            <p>🌍 Beyond coding, I genuinely enjoy connecting with people socially.</p>
+            <p>🚀 I have a deep interest in space, cricket, mathematics, physics, and history — a mix that keeps me curious and grounded</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/python-logo.svg" />
+                </div>
+                <p class="skill-title">Python</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/java-logo.svg" />
+                </div>
+                <p class="skill-title">Java</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/html-logo.svg" />
+                </div>
+                <p class="skill-title">HTML</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/css-logo.svg" />
+                </div>
+                <p class="skill-title">CSS</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/javascript-logo.svg" />
+                </div>
+                <p class="skill-title">JavaScript</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/react-logo.svg" />
+                </div>
+                <p class="skill-title">React</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/redux-logo.svg" />
+                </div>
+                <p class="skill-title">Redux toolkit</p>  
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/nodejs-logo.png" />
+                </div>
+                <p class="skill-title">Node js</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/express-logo.svg" />
+                </div>
+                <p class="skill-title">Express js</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/socket-logo.svg" />
+                </div>
+                <p class="skill-title">Socket IO</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/jwt-logo.svg" />
+                </div>
+                <p class="skill-title">JWT</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/firebase-logo.svg" />
+                </div>
+                <p class="skill-title">Firebase</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/mongodb-logo.svg" />
+                </div>
+                <p class="skill-title">Mongo DB</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/mongoose-logo.png" />
+                </div>
+                <p class="skill-title">Mongoose js</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/multer-logo.png" />
+                </div>
+                <p class="skill-title">Multer js</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/gridfs-logo.jpeg" />
+                </div>
+                <p class="skill-title">GridFS</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/sqlite-logo.svg" />
+                </div>
+                <p class="skill-title">SQL lite</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/tkinter-logo.svg" />
+                </div>
+                <p class="skill-title">TKinter</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/flask-logo.svg" />
+                </div>
+                <p class="skill-title">Flask</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/javafx-logo.png" />
+                </div>
+                <p class="skill-title">JavaFX</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/mixpanel-logo.png" />
+                </div>
+                <p class="skill-title">Mixpanel</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/sharpjs-logo.svg" />
+                </div>
+                <p class="skill-title">Sharp JS</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-image-container">
+                    <img src="./assets/logos/skills/figma-logo.svg" />
+                </div>
+                <p class="skill-title">Figma</p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="projects-list-container">
+            <div class="project-container">
+                <div class="project-image-container">
+                    <img src="./assets/images/projects/youtube-clone-project.png" alt="">
+                </div>
+                <div class="project-about-container">
+                    <h1 class="title">Youtube Clone</h1>
+                    <p class="description">Cloned the Popular Youtube Application and made it functional using ReactJS, used Locofy to Convert Figma design to Frontend</p>
+                    <div class="tool-used">
+                        <div class="tool">HTML</div>
+                        <div class="tool">CSS</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="project-image-container">
+                    <img src="./assets/images/projects/instagram-clone-project.webp" alt="">
+                </div>
+                <div class="project-about-container">
+                    <h1 class="title">Instagram Clone</h1>
+                    <p class="description">Cloned the Popular Instagram Application and made it functional using ReactJS, used Express js and mongoDB for backend server with Socket.io to chat on real time.</p>
+                    <div class="tool-used">
+                        <div class="tool">REACT</div>
+                        <div class="tool">REDUX</div>
+                        <div class="tool">Node JS</div>
+                        <div class="tool">Expxress JS</div>
+                        <div class="tool">MONGODB</div>
+                        <div class="tool">SOCKET IO</div>
+
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </section>
+
+    <section id="contact-me">
+        <h1>Contact me</h1>
+        <p>Wanna Talk. Shoot me a DM or Mail me here 👇</p>
+        <p>I reply to everything everyone everytime at once 😉</p>
+            <form>
+                <input type="email" placeholder="Your email address..." />
+                <input type="text" placeholder="Subject" />
+                <textarea class="message" placeholder="Your message"></textarea>
+                <div class="contact-btn-container">
+                    <button class="contact-btn">Contact me <img src="./assets/icons/right-arrow.svg"> </button>
+                </div>
+            </form>
+    </section>
+
+    <footer id="footer">
+        <div class="copyright-container">@ 2025 Rohinth</div>
+        <div class="footer-nav-container">
+            <ul class="nav-list">
+                <li class="nav-items"><a href="#">Home</a></li>
+                <li class="nav-items"><a href="#about">About</a></li>
+                <li class="nav-items"><a href="#skills">Skills</a></li>
+                <li class="nav-items"><a href="#projects">Projects</a></li>
+                <li class="nav-items"><a href="#contact-me">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="contact-medias-container">
+            <div class="media-logo-container">
+                <img src="./assets/logos/social-medias/email-logo.svg" />
+            </div>
+
+            <div class="media-logo-container">
+                <img src="./assets/logos/social-medias/linkedin-logo.svg" />
+            </div>
+
+            <div class="media-logo-container">
+                <img src="./assets/logos/social-medias/github-logo.svg" />
+            </div>
+
+            <div class="media-logo-container">
+                <img src="./assets/logos/social-medias/instagram-logo.svg" />
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
