@@ -29,7 +29,7 @@
         <div class="logo">Rohinth H</div>
         <div class="hamburger-btn-container">
             <button class="hamburger-btn" onclick="toggleNavList(event)">
-                <img src="./assets/icons/hamburger-icon.svg" />
+                <img src="./assets/icons/hamburger-icon.svg" alt="hamburger-icon" />
             </button>
 
             <div id="hamburger-list" class="nav-list-container">
@@ -317,6 +317,15 @@
                 </div>
             </a>
 
+            <a href="https://yargs.js.org/" class="link-off" target="_blank">
+                <div class="skill-card">
+                    <div class="skill-image-container">
+                        <img src="./assets/logos/skills/yargs-logo.png" />
+                    </div>
+                    <p class="skill-title">Yargs JS</p>
+                </div>
+            </a>
+
             <a href="https://www.figma.com/" class="link-off" target="_blank">
                 <div class="skill-card">
                     <div class="skill-image-container">
@@ -325,46 +334,113 @@
                     <p class="skill-title">Figma</p>
                 </div>
             </a>
-
-
         </div>
     </section>
 
     <section id="projects">
         <h1>Projects</h1>
         <div class="projects-list-container">
-            <div class="project-container">
+            <div class="project-container" onclick="window.open('https:/\/poll-app-jp9w.onrender.com/', '_blank')"  role="link" tabindex="0">
                 <div class="project-image-container">
-                    <img src="./assets/images/projects/youtube-clone-project.png" alt="">
+                    <img src="./assets/images/projects/poll-app-project.png" alt="" >
                 </div>
                 <div class="project-about-container">
-                    <h1 class="title">Youtube Clone</h1>
-                    <p class="description">Cloned the Popular Youtube Application and made it functional using ReactJS, used Locofy to Convert Figma design to Frontend</p>
+                    <h1 class="title">Poll App</h1>
+                    <p class="description">An interactive polling app inspired by Mentimeter that enables real time audience engagement through live polls and Q and A.</p>
                     <div class="tool-used">
-                        <a href="#" class="link-off"><div class="tool">HTML</div></a>
-                        <div class="tool">CSS</div>
+                        <a href="https://react.dev/" class="link-off"><div class="tool">React</div></a>
+                        <a href="https://redux-toolkit.js.org/" class="link-off"><div class="tool">Redux</div></a>
+                        <a href="https://expressjs.com/" class="link-off"><div class="tool">Express</div></a>
+                        <a href="https://mongoosejs.com/" class="link-off"><div class="tool">Mongoose</div></a>
+                        <a href="https://socket.io/" class="link-off"><div class="tool">Socket IO</div></a>
+                        <a href="https://jwt.io/" class="link-off"><div class="tool">JWT</div></a>
                     </div>
                 </div>
             </div>
 
-            <div class="project-container">
+            <div class="project-container" onclick="window.open('https:/\/july-msg.onrender.com', '_blank')"  role="link" tabindex="0">
                 <div class="project-image-container">
                     <img src="./assets/images/projects/instagram-clone-project.webp" alt="">
                 </div>
                 <div class="project-about-container">
                     <h1 class="title">Instagram Clone</h1>
-                    <p class="description">Cloned the Popular Instagram Application and made it functional using ReactJS, used Express js and mongoDB for backend server with Socket.io to chat on real time.</p>
+                    <p class="description">A fully functional Instagram clone with features like user authentication, photo sharing, real time messaging, and profile management.</p>
                     <div class="tool-used">
-                        <div class="tool">REACT</div>
-                        <div class="tool">REDUX</div>
-                        <div class="tool">Node JS</div>
-                        <div class="tool">Expxress JS</div>
-                        <div class="tool">MONGODB</div>
-                        <div class="tool">SOCKET IO</div>
+                        <a href="https://react.dev/" class="link-off"><div class="tool">React</div></a>
+                        <a href="https://expressjs.com/" class="link-off"><div class="tool">Express</div></a>
+                        <a href="https://mongoosejs.com/" class="link-off"><div class="tool">Mongoose</div></a>
+                        <a href="https://socket.io/" class="link-off"><div class="tool">Socket IO</div></a>
+                        <a href="https://jwt.io/" class="link-off"><div class="tool">JWT</div></a>
+                        <a href="https://www.npmjs.com/package/multer" class="link-off"><div class="tool">Multer</div></a>
+                        <a href="https://www.mongodb.com/docs/manual/core/gridfs/" class="link-off"><div class="tool">Grid FS</div></a>
 
                     </div>
                 </div>
-            </div>           
+            </div>  
+            
+            <div class="project-container" onclick="window.open('','_blank')"  role="link" tabindex="0">
+                <div class="project-image-container">
+                    <img src="./assets/images/projects/cli-tool-project.png" alt="">
+                </div>
+                <div class="project-about-container">
+                    <h1 class="title">CLI TOOL</h1>
+                    <p class="description">A command line tool that optimizes images into three screen-based sizes and uploads them to Firebase Storage with download support.</p>
+                    <div class="tool-used">
+                        <a href="https://yargs.js.org/" class="link-off"><div class="tool">Yargs js</div></a>
+                        <a href="https://firebase.google.com/" class="link-off"><div class="tool">Firebase</div></a>
+                        <a href="https://sharp.pixelplumbing.com/" class="link-off"><div class="tool">Sharp js</div></a>
+                        <a href="https://en.wikipedia.org/wiki/JavaScript" class="link-off"><div class="tool">Javascript</div></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-container" onclick="window.open('https:/\/github.com/DevCafeInn/cssBro','_blank')"  role="link" tabindex="0">
+                <div class="project-image-container">
+                    <img src="./assets/images/projects/cssBro-ext-project.png" alt="">
+                </div>
+                <div class="project-about-container">
+                    <h1 class="title">cssBro</h1>
+                    <p class="description">A browser extension that reveals HTML elements and their CSS properties on hover for any website. Built during a national hackathon by our team of four and awarded second prize.</p>
+                    <div class="tool-used">
+                        <a href="https://en.wikipedia.org/wiki/HTML" class="link-off"><div class="tool">HTML</div></a>
+                        <a href="https://en.wikipedia.org/wiki/CSS" class="link-off"><div class="tool">CSS</div></a>
+                        <a href="https://en.wikipedia.org/wiki/JavaScript" class="link-off"><div class="tool">Javascript</div></a>
+                        <a href="https://www.typescriptlang.org/" class="link-off"><div class="tool">Typescript</div></a>
+                        <a href="https://react.dev/" class="link-off"><div class="tool">React</div></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-container" onclick="window.open('https:/\/snapnostr.app/','_blank')"  role="link" tabindex="0">
+                <div class="project-image-container">
+                    <img src="./assets/images/projects/snapnostr-project.png" alt="">
+                </div>
+                <div class="project-about-container">
+                    <h1 class="title">Snapnostr</h1>
+                    <p class="description">Contributed to a Nostr post creation platform (snapnostr) by setting up user analytics and event tracking using Mixpanel.</p>
+                    <div class="tool-used">
+                        <a href="https://mixpanel.com/" class="link-off"><div class="tool">Mixpanel</div></a>
+                        <a href="https://en.wikipedia.org/wiki/JavaScript" class="link-off"><div class="tool">Javascript</div></a>
+                        <a href="https://www.typescriptlang.org/" class="link-off"><div class="tool">Typescript</div></a>
+                        <a href="https://en.wikipedia.org/wiki/HTML" class="link-off"><div class="tool">HTML</div></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-container" onclick="window.open('','_blank')"  role="link" tabindex="0">
+                <div class="project-image-container">
+                    <img src="./assets/images/projects/todo-app-project.png" alt="">
+                </div>
+                <div class="project-about-container">
+                    <h1 class="title">Todo App</h1>
+                    <p class="description">A clean and functional todo app to manage daily tasks with ease and features like task creation and deletion, editing, completion tracking</p>
+                    <div class="tool-used">
+                        <a href="https://react.dev/" class="link-off"><div class="tool">React</div></a>
+                        <a href="https://react-hot-toast.com/" class="link-off"><div class="tool">React-Hot-Toast</div></a>
+                        <a href="https://en.wikipedia.org/wiki/CSS" class="link-off"><div class="tool">CSS</div></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
