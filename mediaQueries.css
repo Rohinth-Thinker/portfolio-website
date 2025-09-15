@@ -6,6 +6,15 @@
 
     #hamburger-nav {
         display: flex;
+        width: 93%;
+    }
+
+
+    #hamburger-nav > .logo {
+        display: flex;
+        gap: 4px;
+        justify-content: center;
+        align-items: center;
     }
 
     /* HERO SECTION */
@@ -42,15 +51,20 @@
 
     section#skills .skills-container {
         padding: 0 2rem;
-        gap: 35px;
-        row-gap: 50px;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 28px;
+        row-gap: 50px;
     }
 
     section#skills .skills-container .skill-card {
-        width: 90px;
+        width: 80px;
         height: 100px;
-        gap: 2px;
+        justify-content: space-around;
+        gap: 0px;
+    }
+
+    section#skills .skills-container .skill-card .skill-title {
+        font-size: 0.9rem;
     }
 
     section#projects h1 {
@@ -72,12 +86,20 @@
 
     section#projects .projects-list-container .project-container .project-image-container img {
         width: 100%;
+        border-radius: 2rem;
     }
 
     section#projects .projects-list-container .project-container .project-about-container {
         padding: 2rem 1rem;
         background-color: rgba(170, 5, 236, 0.027);
         border-radius: 2rem;
+    }
+
+    .theme-switch-container {
+        position: relative;
+        width: 28px;
+        height: 28px;
+        box-shadow: 0px 0px 5px 1px var(--card-box-shadow);
     }
 }
 

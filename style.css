@@ -2,6 +2,20 @@
 
 /* GENERAL */
 
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --card-bg: #f9f9f9;
+    --card-box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.darkmode {
+    --bg-color: rgb(22, 22, 22);
+    --text-color: white;
+    --card-bg: rgb(56, 55, 55);
+    --card-box-shadow: rgba(255, 255, 255, 0.8);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,18 +31,21 @@ body {
     font-family: "Lexend", sans-serif;
     margin: auto;
     max-width: 2000px;
-    /* background-color: black;
-    color: white; */
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 body.scroll-off {
     overflow-y: hidden;
 }
 
+.darkmode a {
+    color: rgb(173, 203, 214);
+}
+
 a.link-off {
     text-decoration: none;
-    color: black;
-    /* color: white; */
+    color: var(--text-color);
 }
 
 button {
@@ -36,19 +53,24 @@ button {
     background-color: transparent;
 }
 
+.nav-main-container {
+    position: fixed;
+    width: 100%;
+    height: 14vh;
+    background-color: var(--bg-color);
+    display: flex;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
 /* Nav */
 #desktop-nav, #hamburger-nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 14vh;
-    position: fixed;
-    top: 0;
-    left: 0;
+    height: 100%;
     width: 100%;
-    background-color: white;
-    /* background-color: black; */
-    z-index: 999;
 }
 
 #hamburger-nav {
@@ -72,23 +94,82 @@ button {
     text-underline-offset: 1rem;
 }
 
-#hamburger-nav .hamburger-btn-container {
+.theme-switch-container {
+    background-color: var(--card-bg);
+    box-shadow: 0px 0px 15px 5px var(--card-box-shadow);
+    position: absolute;
+    right: 2%;
     border-radius: 50%;
-    padding: 8px 10px;
-    box-shadow: 0px 0px 15px 3px rgb(207, 204, 204);
+    width: 40px;
+    height: 40px;
+    top: 27%;
 }
 
-#hamburger-nav .hamburger-btn-container .hamburger-btn img.close-icon {
-    content: url(./assets/icons/close-icon.svg);
+.theme-switch-container > .theme-switch {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.theme-switch-container > .theme-switch svg {
+    fill: var(--text-color);
+}
+
+.theme-switch-container > .theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode .theme-switch-container > .theme-switch svg:last-child {
+    display: block;
+}
+
+.darkmode .theme-switch-container > .theme-switch svg:first-child {
+    display: none;
+}
+
+#hamburger-nav .hamburger-btn-container {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 5px 1px var(--text-color);
+}
+
+#hamburger-nav .hamburger-btn-container .hamburger-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#hamburger-nav .hamburger-btn-container .hamburger-btn svg {
+    fill: var(--text-color);
+}
+
+#hamburger-nav .hamburger-btn-container .hamburger-btn svg:last-child {
+    display: none;
+}
+
+#hamburger-nav .hamburger-btn-container .hamburger-btn.close-icon svg:last-child {
+    display: block;
+}
+
+#hamburger-nav .hamburger-btn-container .hamburger-btn.close-icon svg:first-child {
+    display: none;
 }
 
 #hamburger-nav .hamburger-btn-container .nav-list-container {
-    border-top: 2px solid black;
+    border-top: 2px solid var(--text-color);
     display: none;
     position: absolute;
     top: 14vh;
     left: 0;
-    background-color: white;
+    background-color: var(--bg-color);
     width: 100vw;
     height: 90vh;
 }
@@ -134,7 +215,7 @@ button {
     max-width: 90%;
     max-height: 95%;
     border-radius: 6%;
-    box-shadow: 0 0 5px 1px black;
+    box-shadow: 0 0 5px 1px var(--text-color); 
 }
 
 
@@ -154,8 +235,8 @@ button {
 
 #hero-section .right-section .intro-about-container p {
     display: inline;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 2px solid var(--text-color);
+    border-bottom: 2px solid var(--text-color); 
     padding: 5px 0;
 }
 
@@ -168,6 +249,10 @@ button {
     display: block;
     font-size: 0.9rem;
     margin-bottom: 0.6rem;
+}
+
+#hero-section .right-section .intro-contact-container svg {
+    fill: var(--text-color);
 }
 
 section#about, section#skills, section#projects, section#contact-me {
@@ -216,7 +301,7 @@ section#skills .skills-container {
 }
 
 section#skills .skills-container .skill-card {
-    background-color: #f9f9f9;
+    background-color: var(--card-bg);
     width: 110px;
     height: 115px;
     margin: auto;
@@ -226,7 +311,7 @@ section#skills .skills-container .skill-card {
     align-items: center;
     gap: 15px;
     border-radius: 0.5rem;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px 2px var(--card-box-shadow);
     border: 1px solid rgba(0, 0, 0, 0.089);
 }
 
@@ -273,8 +358,8 @@ section#projects .projects-list-container .project-container {
     border-radius: 2rem;
     display: flex;
     padding-top: 2rem;
-    background-color:#fcfafae0;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    background-color: var(--card-bg);
+    box-shadow: 0px 0px 10px 2px var(--card-box-shadow);
     border: 1px solid rgba(0, 0, 0, 0.089);
 }
 
@@ -323,7 +408,7 @@ section#projects .projects-list-container .project-container .project-about-cont
 }
 
 section#projects .projects-list-container .project-container .project-about-container .tool-used .tool {
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
     border-radius: 1rem;
     padding: 0.3rem 0.5rem;
     font-size: 0.8rem;
@@ -367,4 +452,5 @@ footer .footer-nav-container .nav-list {
 
 .contact-medias-container .media-logo-container svg {
     max-width: 100%;
+    fill: var(--text-color);
 }
