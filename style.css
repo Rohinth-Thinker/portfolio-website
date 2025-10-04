@@ -30,7 +30,6 @@ body {
     position: relative;
     font-family: "Lexend", sans-serif;
     margin: auto;
-    max-width: 2000px;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -55,10 +54,9 @@ button {
 
 .nav-main-container {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 14vh;
     background-color: var(--bg-color);
-    display: flex;
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -230,7 +228,7 @@ button {
 }
 
 #hero-section .right-section .intro-greet-container {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
 }
 
 #hero-section .right-section .intro-about-container p {
