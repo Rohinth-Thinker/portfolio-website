@@ -233,8 +233,6 @@ button {
 
 #hero-section .right-section .intro-about-container p {
     display: inline;
-    border-top: 2px solid var(--text-color);
-    border-bottom: 2px solid var(--text-color); 
     border: 2px solid var(--text-color);
     padding: 5px 5px;
 }
