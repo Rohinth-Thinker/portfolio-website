@@ -235,12 +235,22 @@ button {
     display: inline;
     border-top: 2px solid var(--text-color);
     border-bottom: 2px solid var(--text-color); 
-    padding: 5px 0;
+    border: 2px solid var(--text-color);
+    padding: 5px 5px;
+}
+
+.resume-container {
+    font-size: 0.95rem;
+    margin-top: 25px;
+}
+
+.resume-link {
+    text-decoration: none;
 }
 
 
 #hero-section .right-section .intro-contact-container {
-    margin: 3rem auto 0 auto;
+    margin: 2.5rem auto 0 auto;
 }
 
 #hero-section .right-section .intro-contact-container span {
@@ -364,7 +374,6 @@ section#projects .projects-list-container .project-container {
 section#projects .projects-list-container .project-container:hover {
     cursor: pointer;
 }
-
 
 section#projects .projects-list-container .project-container .project-image-container {
     flex: 1;

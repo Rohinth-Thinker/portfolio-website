@@ -21,6 +21,8 @@
                     <li class="nav-items"> <a class="link-off" href="#about">About</a> </li>
                     <li class="nav-items"> <a class="link-off" href="#skills">Skills</a> </li>
                     <li class="nav-items"> <a class="link-off" href="#projects">Projects</a> </li>
+                    <!-- <a href="./assets/docs/resume.pdf" download>Download Resume</a> -->
+                    <!-- <li class="nav-items"> <a style="color: red;"  class="link-off" href="#projects">Blogs -> </a> </li> -->
                     <!-- <li class="nav-items"> <a class="link-off" href="#contact-me">Contact</a> </li> -->
                 </ul>
             </div>
@@ -77,10 +79,13 @@
                 <h1>I am Rohinth</h1>
             </div>
             <div class="intro-about-container">
-                <p>CODE... EAT... SLEEP... REPEAT...</p>
+                <!-- <p>CODE... EAT... SLEEP... REPEAT...</p> -->
+                 <p>Software Engineer</p>
+                 <p>Full Stack Developer</p>
+                 <div class="resume-container">👉 <a href="./assets/docs/resume.pdf" target="_blank"> View Resume </a> 👈</div>
             </div>
             <div class="intro-contact-container">
-                <span>MAIL ME: <a href="mailto:mr.rohinth@gmail.com">mr.rohinth@gmail.com</a></span>
+                <span>MAIL ME: <a href="mailto:rohinth.tech@gmail.com"> rohinth.tech@gmail.com</a></span>
                     <div class="contact-medias-container">
                         <a href="https://www.linkedin.com/in/rohinth-thinker/" target="_blank">
                             <div class="media-logo-container">
@@ -119,11 +124,13 @@
         <div class="contents">
             <h1>ABOUT ME</h1>
             <p>🌟 Hey there! I’m Rohinth H, a tech enthusiast and Computer Science student at D.G. Vaishnav College, Arumbakkam. I’m passionate about turning ideas into reality through code and creativity.</p>
-            <p>💻 Currently, I’m working on full-stack development and Java application development. I’m a multilingual developer fluent in JavaScript, Python, and Java, and I’ve built several projects using these and other programming languages.</p>
+            <p>💻 Currently, I’m working on full-stack development and Java application development. I’m a multilingual developer fluent in JavaScript, Python, and Java, and I’ve built several projects using these and also with other programming languages.</p>
             <p>🤝 I thrive in collaborative environments like hackathons, conferences, and tech meetups, where I connect with like-minded individuals and grow through shared learning.</p>
             <p>📢 I’m also passionate about spreading motivation and tech awareness among people, especially those just stepping into the world of technology.</p>
             <p>🌍 Beyond coding, I genuinely enjoy connecting with people socially.</p>
             <p>🚀 I have a deep interest in space, cricket, mathematics, physics, and history — a mix that keeps me curious and grounded</p>
+            <div class="resume-container"> 👉 <a href="./assets/docs/resume.pdf" target="_blank">View Resume</a></div>
+
         </div>
     </section>
 
@@ -360,7 +367,27 @@
     <section id="projects">
         <h1>Projects</h1>
         <div class="projects-list-container">
-            <div class="project-container" onclick="window.open('https:/\/poll-app-jp9w.onrender.com/', '_blank')"  role="link" tabindex="0">
+
+            <div class="project-container" onclick="handleNavigation(event, 'https:/\/connect-qfcj.onrender.com/')"  role="link" tabindex="0">
+                <div class="project-image-container">
+                    <img src="./assets/images/projects/connect-project.png" alt="" >
+                </div>
+                <div class="project-about-container">
+                    <h1 class="title">DGVC CONNECT</h1>
+                    <p class="description">A college-exclusive marketplace for buying and selling academic resources with secure ID-based authentication, featuring real-time chat and organized file sharing.</p>
+                    <div class="tool-used">
+                        <a href="https://react.dev/" target="_blank" class="link-off"><div class="tool">React</div></a>
+                        <a href="https://redux-toolkit.js.org/" target="_blank" class="link-off"><div class="tool">Redux</div></a>
+                        <a href="https://expressjs.com/" target="_blank" class="link-off"><div class="tool">Express</div></a>
+                        <a href="https://jwt.io/" target="_blank" class="link-off"><div class="tool">JWT</div></a>
+                        <a href="https://mongoosejs.com/" target="_blank" class="link-off"><div class="tool">Mongoose</div></a>
+                        <a href="https://socket.io/" target="_blank" class="link-off"><div class="tool">Socket IO</div></a>
+                        <a href="https://cloudinary.com/" target="_blank" class="link-off"><div class="tool">Cloudinary</div></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-container" onclick="handleNavigation(event, 'https:/\/poll-app-jp9w.onrender.com/')" role="link" tabindex="0">
                 <div class="project-image-container">
                     <img src="./assets/images/projects/poll-app-project.png" alt="" >
                 </div>
@@ -368,17 +395,17 @@
                     <h1 class="title">Poll App</h1>
                     <p class="description">An interactive polling app inspired by Mentimeter that enables real time audience engagement through live polls and Q and A.</p>
                     <div class="tool-used">
-                        <a href="https://react.dev/" class="link-off"><div class="tool">React</div></a>
-                        <a href="https://redux-toolkit.js.org/" class="link-off"><div class="tool">Redux</div></a>
-                        <a href="https://expressjs.com/" class="link-off"><div class="tool">Express</div></a>
-                        <a href="https://mongoosejs.com/" class="link-off"><div class="tool">Mongoose</div></a>
-                        <a href="https://socket.io/" class="link-off"><div class="tool">Socket IO</div></a>
-                        <a href="https://jwt.io/" class="link-off"><div class="tool">JWT</div></a>
+                        <a href="https://react.dev/" target="_blank" class="link-off"><div class="tool">React</div></a>
+                        <a href="https://redux-toolkit.js.org/" target="_blank" class="link-off"><div class="tool">Redux</div></a>
+                        <a href="https://expressjs.com/" target="_blank" class="link-off"><div class="tool">Express</div></a>
+                        <a href="https://mongoosejs.com/" target="_blank" class="link-off"><div class="tool">Mongoose</div></a>
+                        <a href="https://socket.io/" target="_blank" class="link-off"><div class="tool">Socket IO</div></a>
+                        <a href="https://jwt.io/" target="_blank" class="link-off"><div class="tool">JWT</div></a>
                     </div>
                 </div>
             </div>
 
-            <div class="project-container" onclick="window.open('https:/\/july-msg.onrender.com', '_blank')"  role="link" tabindex="0">
+            <div class="project-container" onclick="handleNavigation(event, 'https:/\/july-msg.onrender.com')" role="link" tabindex="0">
                 <div class="project-image-container">
                     <img src="./assets/images/projects/instagram-clone-project.webp" alt="">
                 </div>
@@ -386,19 +413,19 @@
                     <h1 class="title">Instagram Clone</h1>
                     <p class="description">A fully functional Instagram clone with features like user authentication, photo sharing, real time messaging, and profile management.</p>
                     <div class="tool-used">
-                        <a href="https://react.dev/" class="link-off"><div class="tool">React</div></a>
-                        <a href="https://expressjs.com/" class="link-off"><div class="tool">Express</div></a>
-                        <a href="https://mongoosejs.com/" class="link-off"><div class="tool">Mongoose</div></a>
-                        <a href="https://socket.io/" class="link-off"><div class="tool">Socket IO</div></a>
-                        <a href="https://jwt.io/" class="link-off"><div class="tool">JWT</div></a>
-                        <a href="https://www.npmjs.com/package/multer" class="link-off"><div class="tool">Multer</div></a>
-                        <a href="https://www.mongodb.com/docs/manual/core/gridfs/" class="link-off"><div class="tool">Grid FS</div></a>
+                        <a href="https://react.dev/" target="_blank" class="link-off"><div class="tool">React</div></a>
+                        <a href="https://expressjs.com/" target="_blank" class="link-off"><div class="tool">Express</div></a>
+                        <a href="https://mongoosejs.com/" target="_blank" class="link-off"><div class="tool">Mongoose</div></a>
+                        <a href="https://socket.io/" target="_blank" class="link-off"><div class="tool">Socket IO</div></a>
+                        <a href="https://jwt.io/" target="_blank" class="link-off"><div class="tool">JWT</div></a>
+                        <a href="https://www.npmjs.com/package/multer" target="_blank" class="link-off"><div class="tool">Multer</div></a>
+                        <a href="https://www.mongodb.com/docs/manual/core/gridfs/" target="_blank" class="link-off"><div class="tool">Grid FS</div></a>
 
                     </div>
                 </div>
             </div>  
             
-            <div class="project-container" onclick="window.open('https:/\/github.com/Rohinth-Thinker/auto-image-automation-tool','_blank')"  role="link" tabindex="0">
+            <div class="project-container" onclick="handleNavigation(event, 'https:/\/github.com/Rohinth-Thinker/auto-image-automation-tool')" role="link" tabindex="0">
                 <div class="project-image-container">
                     <img src="./assets/images/projects/cli-tool-project.png" alt="">
                 </div>
@@ -406,15 +433,15 @@
                     <h1 class="title">CLI TOOL</h1>
                     <p class="description">A command line tool that optimizes images into three screen-based sizes and uploads them to Firebase Storage with download support.</p>
                     <div class="tool-used">
-                        <a href="https://yargs.js.org/" class="link-off"><div class="tool">Yargs js</div></a>
-                        <a href="https://firebase.google.com/" class="link-off"><div class="tool">Firebase</div></a>
-                        <a href="https://sharp.pixelplumbing.com/" class="link-off"><div class="tool">Sharp js</div></a>
-                        <a href="https://en.wikipedia.org/wiki/JavaScript" class="link-off"><div class="tool">Javascript</div></a>
+                        <a href="https://yargs.js.org/" target="_blank" class="link-off"><div class="tool">Yargs js</div></a>
+                        <a href="https://firebase.google.com/" target="_blank" class="link-off"><div class="tool">Firebase</div></a>
+                        <a href="https://sharp.pixelplumbing.com/" target="_blank" class="link-off"><div class="tool">Sharp js</div></a>
+                        <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="link-off"><div class="tool">Javascript</div></a>
                     </div>
                 </div>
             </div>
 
-            <div class="project-container" onclick="window.open('https:/\/github.com/DevCafeInn/cssBro','_blank')"  role="link" tabindex="0">
+            <div class="project-container" onclick="handleNavigation(event, 'https:/\/github.com/DevCafeInn/cssBro')" role="link" tabindex="0">
                 <div class="project-image-container">
                     <img src="./assets/images/projects/cssBro-ext-project.png" alt="">
                 </div>
@@ -422,16 +449,16 @@
                     <h1 class="title">cssBro</h1>
                     <p class="description">A browser extension that reveals HTML elements and their CSS properties on hover for any website. Built during a national hackathon by our team of four and awarded second prize.</p>
                     <div class="tool-used">
-                        <a href="https://en.wikipedia.org/wiki/HTML" class="link-off"><div class="tool">HTML</div></a>
-                        <a href="https://en.wikipedia.org/wiki/CSS" class="link-off"><div class="tool">CSS</div></a>
-                        <a href="https://en.wikipedia.org/wiki/JavaScript" class="link-off"><div class="tool">Javascript</div></a>
-                        <a href="https://www.typescriptlang.org/" class="link-off"><div class="tool">Typescript</div></a>
-                        <a href="https://react.dev/" class="link-off"><div class="tool">React</div></a>
+                        <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" class="link-off"><div class="tool">HTML</div></a>
+                        <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="link-off"><div class="tool">CSS</div></a>
+                        <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="link-off"><div class="tool">Javascript</div></a>
+                        <a href="https://www.typescriptlang.org/" target="_blank" class="link-off"><div class="tool">Typescript</div></a>
+                        <a href="https://react.dev/" target="_blank" class="link-off"><div class="tool">React</div></a>
                     </div>
                 </div>
             </div>
 
-            <div class="project-container" onclick="window.open('https:/\/snapnostr.app/','_blank')"  role="link" tabindex="0">
+            <div class="project-container" onclick="handleNavigation(event, 'https:/\/snapnostr.app/')" role="link" tabindex="0">
                 <div class="project-image-container">
                     <img src="./assets/images/projects/snapnostr-project.png" alt="">
                 </div>
@@ -439,15 +466,15 @@
                     <h1 class="title">Snapnostr</h1>
                     <p class="description">Contributed to a Nostr post creation platform (snapnostr) by setting up user analytics and event tracking using Mixpanel.</p>
                     <div class="tool-used">
-                        <a href="https://mixpanel.com/" class="link-off"><div class="tool">Mixpanel</div></a>
-                        <a href="https://en.wikipedia.org/wiki/JavaScript" class="link-off"><div class="tool">Javascript</div></a>
-                        <a href="https://www.typescriptlang.org/" class="link-off"><div class="tool">Typescript</div></a>
-                        <a href="https://en.wikipedia.org/wiki/HTML" class="link-off"><div class="tool">HTML</div></a>
+                        <a href="https://mixpanel.com/" target="_blank" class="link-off"><div class="tool">Mixpanel</div></a>
+                        <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="link-off"><div class="tool">Javascript</div></a>
+                        <a href="https://www.typescriptlang.org/" target="_blank" class="link-off"><div class="tool">Typescript</div></a>
+                        <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" class="link-off"><div class="tool">HTML</div></a>
                     </div>
                 </div>
             </div>
 
-            <div class="project-container" onclick="window.open('https:/\/todo-app-black-gamma-86.vercel.app/','_blank')"  role="link" tabindex="0">
+            <div class="project-container" onclick="handleNavigation(event, 'https:/\/todo-app-black-gamma-86.vercel.app/')" role="link" tabindex="0">
                 <div class="project-image-container">
                     <img src="./assets/images/projects/todo-app-project.png" alt="">
                 </div>
@@ -455,9 +482,9 @@
                     <h1 class="title">Todo App</h1>
                     <p class="description">A clean and functional todo app to manage daily tasks with ease and features like task creation and deletion, editing, completion tracking</p>
                     <div class="tool-used">
-                        <a href="https://react.dev/" class="link-off"><div class="tool">React</div></a>
-                        <a href="https://react-hot-toast.com/" class="link-off"><div class="tool">React-Hot-Toast</div></a>
-                        <a href="https://en.wikipedia.org/wiki/CSS" class="link-off"><div class="tool">CSS</div></a>
+                        <a href="https://react.dev/" target="_blank" class="link-off"><div class="tool">React</div></a>
+                        <a href="https://react-hot-toast.com/" target="_blank" class="link-off"><div class="tool">React-Hot-Toast</div></a>
+                        <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="link-off"><div class="tool">CSS</div></a>
                     </div>
                 </div>
             </div>
@@ -465,7 +492,7 @@
     </section>
 
     <footer id="footer">
-        <div class="copyright-container">&copy; 2025 Rohinth</div>
+        <div class="copyright-container">&copy; 2025 Rohinth - <a class="resume-link" href="./assets/docs/resume.pdf" target="_blank"> Resume </a></div>
         <div class="footer-nav-container">
             <ul class="nav-list">
                 <li class="nav-items"><a href="#">Home</a></li>
@@ -478,7 +505,7 @@
 
         <div class="contact-medias-container">
 
-            <a href="mailto:mr.rohinth@gmail.com">
+            <a href="mailto:rohinth.tech@gmail.com">
                 <div class="media-logo-container">
                     <title>Email</title>
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" viewBox="0 -960 960 960"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280 320-200v-80L480-520 160-720v80l320 200Z"/></svg>
@@ -517,6 +544,7 @@
 
     </footer>
 
+    <script src="./script.js"></script>
     <script src="./scripts/toggleNavList.js"></script>
     <script src="./scripts/darkmode.js"></script>
     
